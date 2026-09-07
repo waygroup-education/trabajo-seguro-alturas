@@ -1,0 +1,443 @@
+      <header class="ova-screen__head" data-reveal>
+        <div class="ova-screen__eyebrow">Tema {{NUM}}</div>
+        <h1 class="ova-screen__title">Identificación de peligros, evaluación del riesgo de caída y jerarquía de controles</h1>
+      </header>
+
+      <!-- Situación de partida · tabla 1x1 del DI previa a 2.1 -->
+      <div data-reveal style="margin-bottom:40px; padding:32px; background:linear-gradient(135deg, color-mix(in srgb, var(--c-acento) 10%, var(--bg-surface)) 0%, var(--bg-surface) 60%); border:1px solid color-mix(in srgb, var(--c-acento) 30%, var(--border-c)); border-radius:var(--r-lg); position:relative; overflow:hidden;">
+        <h3 style="font-family:var(--font-mono); font-size:.78rem; letter-spacing:.18em; text-transform:uppercase; color:var(--c-acento); margin:0 0 16px; display:flex; align-items:center; gap:10px;"><iconify-icon icon="mdi:comment-question-outline" style="font-size:1.1rem;"></iconify-icon> Situación de partida</h3>
+        <p style="margin:0; font-size:1.02rem; line-height:1.6;">Un equipo debe instalar publicidad en la fachada de un edificio de seis pisos. Antes de decidir qué usarán para protegerse, el coordinador les pregunta: ¿qué necesitamos saber primero, y qué debemos intentar antes de ponernos el arnés? Piensa en tu respuesta antes de seguir. La pregunta del coordinador tiene toda la intención: en trabajo en alturas, el arnés casi nunca debería ser la primera respuesta; suele ser la última barrera. Aquí vas a ver, paso a paso y sin matemáticas complicadas, cómo llegar a esa decisión.</p>
+      </div>
+
+      <!-- ════ Sección {{NUM}}.1 · peligros ════ -->
+      <section class="ova-seccion" id="peligros" data-reveal>
+        <h2 class="ova-seccion__titulo">Qué es un peligro y cómo identificarlo antes de subir</h2>
+        <p class="ova-seccion__lead">Un peligro es, en palabras simples, cualquier cosa que pueda hacer daño mientras se trabaja en alturas: un piso resbaloso, un cable suelto, una baranda floja, el viento fuerte, la lluvia, el cansancio o incluso un compañero que no está prestando atención. Identificar peligros significa, literalmente, mirar alrededor y preguntarse:</p>
+      </section>
+
+
+      <!-- Pregunta retórica de apertura -->
+      <div data-reveal style="margin-top:8px; position:relative; padding:24px 24px 24px 60px; background:linear-gradient(135deg, color-mix(in srgb, var(--c-acento) 8%, var(--bg-surface)), var(--bg-surface)); border:1px solid color-mix(in srgb, var(--c-acento) 25%, var(--border-c)); border-radius:var(--r-md); font-family:var(--font-display); font-size:1.3rem; color:var(--text-head); line-height:1.35;">
+        <iconify-icon icon="mdi:format-quote-open" style="position:absolute; top:16px; left:20px; font-size:2rem; color:var(--c-acento); opacity:.7;"></iconify-icon>
+        ¿Qué de todo esto me podría hacer caer o lastimar?
+      </div>
+
+      <p data-reveal style="margin-top:28px;">
+        No hace falta ser ingeniero para identificar peligros; de hecho, quienes ejecutan la
+        tarea todos los días suelen ser quienes mejor conocen los riesgos reales del sitio. Por
+        eso, antes de subir, conviene que el equipo completo (no solo el coordinador) participe
+        respondiendo esta pregunta, mirando la superficie donde se va a trabajar, el clima del
+        día, el estado de las herramientas y cómo se sienten físicamente ese día.
+      </p>
+
+      <p data-reveal>El riesgo, en cambio, es la posibilidad de que ese peligro llegue a producir un daño, considerando qué tan probable es que ocurra y qué tan grave sería si ocurre: un mismo peligro puede representar un riesgo bajo o alto según el contexto, por ejemplo un borde sin protección es un riesgo bajo si nadie transita cerca, y alto si alguien trabaja justo al lado sin ningún control. Los peligros más comunes en trabajo en alturas se agrupan en unas pocas categorías fáciles de recordar:</p>
+
+      <!-- Acordeón -->
+      <div class="ova-acordeon" data-reveal style="margin-top:16px;">
+        <div class="ova-acordeon__item is-open">
+          <button class="ova-acordeon__head">
+            <span><span class="num">01</span> El lugar</span>
+            <iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon>
+          </button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner">
+            Piso, bordes y aberturas del sitio donde se va a trabajar.
+          </div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head">
+            <span><span class="num">02</span> Herramientas o cargas</span>
+            <iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon>
+          </button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner">
+            Los objetos que se manejan durante la tarea.
+          </div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head">
+            <span><span class="num">03</span> El clima</span>
+            <iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon>
+          </button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner">
+            Viento, lluvia, calor y otras condiciones del día.
+          </div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head">
+            <span><span class="num">04</span> El estado físico de la persona</span>
+            <iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon>
+          </button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner">
+            Cansancio, sueño o enfermedad.
+          </div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head">
+            <span><span class="num">05</span> El propio equipo de protección</span>
+            <iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon>
+          </button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner">
+            Mal ajustado, dañado o mal usado.
+          </div></div>
+        </div>
+      </div>
+
+      <!-- ════ Sección {{NUM}}.2 · nivel-riesgo ════ -->
+      <section class="ova-seccion" id="nivel-riesgo" data-reveal>
+        <h2 class="ova-seccion__titulo">Qué tan grave es el riesgo: cómo decidirlo sin fórmulas</h2>
+        <p class="ova-seccion__lead">Una vez identificados los peligros, el siguiente paso es preguntarse qué tan grave es cada uno. Para eso basta con responder dos preguntas simples:</p>
+      </section>
+
+
+      <!-- Carrusel · 2 preguntas (se maqueta como grid de 2, ver GUIA-COMPONENTES: 3 o menos → grid) -->
+      <div class="ova-grid-2" data-reveal>
+        <div style="position:relative; padding:32px 28px; background:var(--bg-surface); border:1px solid var(--border-c); border-radius:var(--r-lg); overflow:hidden;">
+          <span style="position:absolute; top:18px; right:18px; font-family:var(--font-mono); font-size:.75rem; color:var(--c-acento); background:color-mix(in srgb, var(--c-acento) 12%, transparent); padding:4px 10px; border-radius:999px;">PREGUNTA 1</span>
+          <div style="width:64px; height:64px; border-radius:18px; background:var(--grad-brand); display:grid; place-items:center; color:white; margin-bottom:18px; box-shadow:0 10px 24px color-mix(in srgb, var(--c-acento) 30%, transparent);">
+            <iconify-icon icon="mdi:help-circle-outline" style="font-size:2rem;"></iconify-icon>
+          </div>
+          <h3 style="margin:0 0 10px; font-size:1.25rem;">¿Qué tan probable es que esto pase?</h3>
+          <p style="margin:0;">
+            Si algo es poco probable y, aunque pase, no causaría gran daño, el riesgo es bajo.
+          </p>
+        </div>
+        <div style="position:relative; padding:32px 28px; background:var(--bg-surface); border:1px solid var(--border-c); border-radius:var(--r-lg); overflow:hidden;">
+          <span style="position:absolute; top:18px; right:18px; font-family:var(--font-mono); font-size:.75rem; color:var(--c-info); background:color-mix(in srgb, var(--c-info) 14%, transparent); padding:4px 10px; border-radius:999px;">PREGUNTA 2</span>
+          <div style="width:64px; height:64px; border-radius:18px; background:linear-gradient(135deg, var(--c-info), color-mix(in srgb, var(--c-info) 70%, var(--c-acento))); display:grid; place-items:center; color:white; margin-bottom:18px; box-shadow:0 10px 24px color-mix(in srgb, var(--c-info) 30%, transparent);">
+            <iconify-icon icon="mdi:alert-outline" style="font-size:2rem;"></iconify-icon>
+          </div>
+          <h3 style="margin:0 0 10px; font-size:1.25rem;">¿Qué tan grave sería si pasa?</h3>
+          <p style="margin:0;">
+            Si lo que podría pasar es una lesión grave o la muerte, la gravedad es alta, sin importar qué tan probable sea que ocurra: una caída de altura, por ejemplo, suele ser poco probable, pero su gravedad es casi siempre alta.
+          </p>
+        </div>
+      </div>
+
+      <p data-reveal style="margin-top:32px;">
+        En seguridad y salud en el trabajo existen metodologías formales para calcular esto con
+        más precisión (la más usada en Colombia es la GTC 45 del ICONTEC), que combinan estas dos
+        preguntas en una tabla técnica.
+      </p>
+
+      <!-- Botón: Importante -->
+      <div class="ova-callout" style="margin-top:14px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:information-outline"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Importante</span>
+          <p style="margin:8px 0 0;">
+            Si eres profesional de SST, esa metodología es la que debes aplicar y documentar
+            formalmente. Pero si eres quien va a subir, no necesitas hacer ningún cálculo: lo que
+            sí necesitas es participar honestamente respondiendo esas dos preguntas simples para
+            la tarea del día, y confiar en que el coordinador traducirá esas respuestas al nivel
+            de riesgo formal.
+          </p>
+        </div>
+      </div>
+
+      <h3 style="margin:48px 0 16px;" data-reveal>Niveles de riesgo</h3>
+      <!-- Tabla · Nivel de riesgo / ¿Qué significa? / ¿Qué se debe hacer? → ova-infografia (contrato B4) -->
+      <div class="ova-infografia" data-reveal>
+        <div class="ova-infografia__paso" style="--tinte:var(--danger);">
+          <div class="ova-infografia__num">01</div>
+          <div class="ova-infografia__icono"><iconify-icon icon="mdi:alert-octagon"></iconify-icon></div>
+          <div>
+            <h3 class="ova-infografia__label">Muy alto / crítico</h3>
+            <p class="ova-infografia__desc">Es muy probable que pase y sería muy grave si pasa.</p>
+            <p class="ova-infografia__desc" style="margin-top:6px;"><strong>Qué hacer:</strong> Detener la tarea de inmediato hasta corregir la situación.</p>
+          </div>
+        </div>
+        <div class="ova-infografia__paso" style="--tinte:var(--c-acento);">
+          <div class="ova-infografia__num">02</div>
+          <div class="ova-infografia__icono"><iconify-icon icon="mdi:alert"></iconify-icon></div>
+          <div>
+            <h3 class="ova-infografia__label">Alto</h3>
+            <p class="ova-infografia__desc">Es probable que pase, o sería grave si pasa.</p>
+            <p class="ova-infografia__desc" style="margin-top:6px;"><strong>Qué hacer:</strong> No iniciar ni continuar la tarea sin antes poner controles adicionales.</p>
+          </div>
+        </div>
+        <div class="ova-infografia__paso" style="--tinte:var(--warning);">
+          <div class="ova-infografia__num">03</div>
+          <div class="ova-infografia__icono"><iconify-icon icon="mdi:alert-circle-outline"></iconify-icon></div>
+          <div>
+            <h3 class="ova-infografia__label">Medio</h3>
+            <p class="ova-infografia__desc">Podría pasar, pero hay controles que ya ayudan a evitarlo.</p>
+            <p class="ova-infografia__desc" style="margin-top:6px;"><strong>Qué hacer:</strong> Mejorar el control existente en cuanto sea posible.</p>
+          </div>
+        </div>
+        <div class="ova-infografia__paso" style="--tinte:var(--success);">
+          <div class="ova-infografia__num">04</div>
+          <div class="ova-infografia__icono"><iconify-icon icon="mdi:shield-check-outline"></iconify-icon></div>
+          <div>
+            <h3 class="ova-infografia__label">Bajo</h3>
+            <p class="ova-infografia__desc">Es poco probable que pase, y no sería muy grave si pasa.</p>
+            <p class="ova-infografia__desc" style="margin-top:6px;"><strong>Qué hacer:</strong> Mantener las medidas actuales y seguir revisando de vez en cuando.</p>
+          </div>
+        </div>
+      </div>
+
+      <p data-reveal style="margin-top:32px;">
+        Sin importar tu rol, cuando el riesgo resulta alto o crítico no basta con ponerse más equipo de protección: hay que buscar primero si es posible eliminar o reducir el peligro desde su origen, como se explica en el siguiente numeral.
+      </p>
+
+      <!-- Botón: Dato curioso -->
+      <div class="ova-callout" style="margin-top:14px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:head-question-outline"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Dato curioso</span>
+          <p style="margin:8px 0 0;">
+            En un estudio de 117 accidentes laborales analizados en dos proyectos de
+            construcción en Neiva, Colombia, el 74 % de las causas inmediatas identificadas
+            correspondió a actos inseguros (151 de 205 causas registradas), frente a apenas un 26 % de condiciones inseguras del entorno (González et al., 2016, Revista Ingeniería de Construcción, Vol. 31, N.º 1). Es decir, la mayoría de esos accidentes no
+            ocurrieron porque el lugar fuera peligroso, sino porque alguien tomó, en el momento,
+            una decisión insegura.
+          </p>
+        </div>
+      </div>
+
+      <!-- ════ Sección {{NUM}}.3 · jerarquia-controles ════ -->
+      <section class="ova-seccion" id="jerarquia-controles" data-reveal>
+        <h2 class="ova-seccion__titulo">Qué hacer primero: el orden correcto de las soluciones</h2>
+        <p class="ova-seccion__lead">Frente a un peligro identificado, existe un orden de prioridad que se debe seguir, como una <strong>escalera de opciones</strong>:</p>
+      </section>
+
+
+      <!-- Stepper (maquetado como ova-infografia--escalera = Vista 2 del mockup aprobado OVA-002) -->
+      <div class="ova-infografia ova-infografia--escalera" data-reveal>
+        <div class="ova-infografia__paso" style="--tinte:#16A34A;">
+          <div class="ova-infografia__num">01</div>
+          <div class="ova-infografia__icono"><iconify-icon icon="mdi:cancel"></iconify-icon></div>
+          <div>
+            <h3 class="ova-infografia__label">Eliminación</h3>
+            <p class="ova-infografia__desc">Quitar el peligro por completo del entorno laboral.</p>
+          </div>
+        </div>
+        <div class="ova-infografia__paso" style="--tinte:#65A30D;">
+          <div class="ova-infografia__num">02</div>
+          <div class="ova-infografia__icono"><iconify-icon icon="mdi:swap-horizontal"></iconify-icon></div>
+          <div>
+            <h3 class="ova-infografia__label">Sustitución</h3>
+            <p class="ova-infografia__desc">Cambiar el material, equipo o proceso por uno menos peligroso.</p>
+          </div>
+        </div>
+        <div class="ova-infografia__paso" style="--tinte:var(--c-info);">
+          <div class="ova-infografia__num">03</div>
+          <div class="ova-infografia__icono"><iconify-icon icon="mdi:wall"></iconify-icon></div>
+          <div>
+            <h3 class="ova-infografia__label">Controles de ingeniería</h3>
+            <p class="ova-infografia__desc">Aislar la fuente de riesgo mediante diseño técnico o barreras físicas.</p>
+          </div>
+        </div>
+        <div class="ova-infografia__paso" style="--tinte:#7C6FD8;">
+          <div class="ova-infografia__num">04</div>
+          <div class="ova-infografia__icono"><iconify-icon icon="mdi:clipboard-text"></iconify-icon></div>
+          <div>
+            <h3 class="ova-infografia__label">Controles administrativos</h3>
+            <p class="ova-infografia__desc">Modificar métodos de trabajo, señalización, turnos o capacitación.</p>
+          </div>
+        </div>
+        <div class="ova-infografia__paso" style="--tinte:var(--c-acento);">
+          <div class="ova-infografia__num">05</div>
+          <div class="ova-infografia__icono"><iconify-icon icon="mdi:account-hard-hat"></iconify-icon></div>
+          <div>
+            <h3 class="ova-infografia__label">Equipo de protección personal (EPP)</h3>
+            <p class="ova-infografia__desc">Proveer elementos para proteger de manera individual al trabajador como última línea de defensa.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botón: Atención (error más común, tal como lo trae el mockup aprobado, completado con la 2a oración del DI para cobertura literal 100%) -->
+      <div class="ova-callout ova-callout--warning" style="margin-top:36px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:alert"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Atención</span>
+          <p style="margin:8px 0 0;">
+            El error más común en este punto es saltarse directamente al arnés porque es lo más
+            rápido de conseguir, sin preguntarse antes si existía una forma de evitar el peligro
+            desde el origen. El arnés protege si algo sale mal, pero las opciones anteriores
+            buscan que nada salga mal.
+          </p>
+        </div>
+      </div>
+
+      <!-- Modal: Piénsalo con un ejemplo cotidiano (convertido a callout, ver contrato B4: el mockup no trae este bloque) -->
+      <div class="ova-callout" style="margin-top:14px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:thought-bubble-outline"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Piénsalo con un ejemplo cotidiano</span>
+          <p style="margin:8px 0 0;">
+            Si hay un hueco peligroso en el piso de una casa, lo ideal es taparlo (eliminar el
+            peligro). Si no se puede tapar de inmediato, lo siguiente es poner una baranda
+            alrededor (control físico). Ponerle a cada persona que pase por ahí un arnés sería,
+            literalmente, la última opción, no la primera, aunque suene exagerado en este
+            ejemplo. En trabajo en alturas la lógica es exactamente la misma.
+          </p>
+        </div>
+      </div>
+
+      <!-- ════ Sección {{NUM}}.4 · objetos-viento ════ -->
+      <section class="ova-seccion" id="objetos-viento" data-reveal>
+        <h2 class="ova-seccion__titulo">Peligros que no dependen de que alguien se caiga: objetos que caen y viento</h2>
+        <p class="ova-seccion__lead">No todo peligro en trabajo en alturas tiene que ver con que una persona se caiga. Uno de los más frecuentes, y muchas veces olvidado, es la caída de objetos: una herramienta, un tornillo, un trozo de material o incluso un balde pueden caer desde varios metros y golpear con fuerza suficiente para lesionar gravemente a alguien que está abajo, aunque esa persona no esté haciendo trabajo en alturas.</p>
+      </section>
+
+
+      <p data-reveal style="margin-top:8px;">Para controlar este peligro:</p>
+
+      <!-- Comparativo · Tabla: Caída de objetos / Viento -->
+      <h3 style="margin:24px 0 16px; display:flex; align-items:center; gap:10px;" data-reveal>
+        <iconify-icon icon="mdi:scale-balance" style="color:var(--c-acento); font-size:1.6rem;"></iconify-icon>
+        Comparativo
+      </h3>
+      <div class="ova-grid-2" data-reveal>
+        <div style="padding:28px; background:var(--bg-surface); border:1px solid var(--border-c); border-radius:var(--r-lg);">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:18px;">
+            <div style="width:44px; height:44px; border-radius:12px; background:var(--grad-brand); display:grid; place-items:center; color:#fff;"><iconify-icon icon="mdi:toolbox-outline" style="font-size:1.3rem;"></iconify-icon></div>
+            <h3 style="margin:0; font-size:1.2rem;">Caída de objetos</h3>
+          </div>
+          <ul style="list-style:none; padding:0; margin:0; display:grid; gap:10px;">
+            <li style="display:flex; gap:10px; align-items:flex-start;"><iconify-icon icon="mdi:check-circle-outline" style="color:var(--c-acento); font-size:1.05rem; margin-top:2px; flex-shrink:0;"></iconify-icon><span>Delimitar y señalizar la zona bajo la tarea, de modo que nadie transite ni permanezca debajo mientras se trabaja arriba.</span></li>
+            <li style="display:flex; gap:10px; align-items:flex-start;"><iconify-icon icon="mdi:check-circle-outline" style="color:var(--c-acento); font-size:1.05rem; margin-top:2px; flex-shrink:0;"></iconify-icon><span>Amarrar herramientas con cordones de seguridad, para que no se resbalen de las manos.</span></li>
+            <li style="display:flex; gap:10px; align-items:flex-start;"><iconify-icon icon="mdi:check-circle-outline" style="color:var(--c-acento); font-size:1.05rem; margin-top:2px; flex-shrink:0;"></iconify-icon><span>No dejar materiales sueltos cerca de un borde.</span></li>
+            <li style="display:flex; gap:10px; align-items:flex-start;"><iconify-icon icon="mdi:check-circle-outline" style="color:var(--c-acento); font-size:1.05rem; margin-top:2px; flex-shrink:0;"></iconify-icon><span>Casco de seguridad obligatorio también para quien apoya en tierra.</span></li>
+          </ul>
+        </div>
+        <div style="padding:28px; background:var(--bg-surface); border:1px solid var(--border-c); border-radius:var(--r-lg);">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:18px;">
+            <div style="width:44px; height:44px; border-radius:12px; background:linear-gradient(135deg, var(--c-info), color-mix(in srgb, var(--c-info) 70%, var(--c-acento))); display:grid; place-items:center; color:#fff;"><iconify-icon icon="mdi:weather-windy" style="font-size:1.3rem;"></iconify-icon></div>
+            <h3 style="margin:0; font-size:1.2rem;">Viento</h3>
+          </div>
+          <ul style="list-style:none; padding:0; margin:0; display:grid; gap:10px;">
+            <li style="display:flex; gap:10px; align-items:flex-start;"><iconify-icon icon="mdi:check-circle-outline" style="color:var(--c-info); font-size:1.05rem; margin-top:2px; flex-shrink:0;"></iconify-icon><span>Andamios, torres y grúas son más sensibles a las ráfagas mientras más alto y expuesto el punto de trabajo.</span></li>
+            <li style="display:flex; gap:10px; align-items:flex-start;"><iconify-icon icon="mdi:check-circle-outline" style="color:var(--c-info); font-size:1.05rem; margin-top:2px; flex-shrink:0;"></iconify-icon><span>Una ráfaga fuerte puede hacer perder el equilibrio a una persona o desestabilizar un elemento suspendido.</span></li>
+            <li style="display:flex; gap:10px; align-items:flex-start;"><iconify-icon icon="mdi:check-circle-outline" style="color:var(--c-info); font-size:1.05rem; margin-top:2px; flex-shrink:0;"></iconify-icon><span>El coordinador define, antes de subir, a partir de qué velocidad de viento se suspende la tarea.</span></li>
+            <li style="display:flex; gap:10px; align-items:flex-start;"><iconify-icon icon="mdi:check-circle-outline" style="color:var(--c-info); font-size:1.05rem; margin-top:2px; flex-shrink:0;"></iconify-icon><span>Esa regla se cumple sin excepciones, aunque falte poco para terminar.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <p data-reveal style="margin-top:32px;">
+        Estos dos peligros son exactamente algunos de los que vas a enfrentar en la inmersión, en la escena
+        de caída de objetos, donde debes colocarte el casco y avisar a tu compañero, y en la
+        escena de torre grúa, donde el viento es la causa de la caída si no se actúa a tiempo.
+      </p>
+
+      <!-- Botón: Error frecuente -->
+      <div class="ova-callout ova-callout--danger" style="margin-top:32px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:close-octagon"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Error frecuente</span>
+          <p style="margin:8px 0 0;">
+            Elegir el arnés como primera y única solución, sin haber revisado antes si era
+            posible eliminar el peligro o usar una protección fija, como un sistema de restricción o perimetral certificado (por ejemplo, una baranda diseñada para ese fin).
+          </p>
+        </div>
+      </div>
+
+      <!-- Botón: Criterio de aceptación -->
+      <div class="ova-callout" style="margin-top:14px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:clipboard-check-outline"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Criterio de aceptación</span>
+          <p style="margin:8px 0 0;">
+            Puedes explicar, para la tarea del día, qué peligros identificarías, qué tan grave te parecería cada uno, y por qué escogerías los controles en ese orden de prioridad.
+          </p>
+        </div>
+      </div>
+
+      <!-- Comparativo · Ejemplo contextualizado / Contraejemplo -->
+      <h3 style="margin:48px 0 16px; display:flex; align-items:center; gap:10px;" data-reveal>
+        <iconify-icon icon="mdi:scale-balance" style="color:var(--c-acento); font-size:1.6rem;"></iconify-icon>
+        Comparativo
+      </h3>
+      <div class="ova-vs" data-reveal>
+        <div class="ova-vs__card">
+          <span class="ova-vs__card-tag" style="background:color-mix(in srgb, var(--success) 14%, transparent); color:var(--success);">✓ Ejemplo contextualizado</span>
+          <h3>Ejemplo contextualizado</h3>
+          <p>
+            Equipo que, antes de cualquier tarea, se reúne un momento a mirar el sitio y
+            responder juntos qué peligros ven y qué tan graves les parecen, dejando esa
+            conversación registrada en el permiso de trabajo.
+          </p>
+        </div>
+        <div class="ova-vs__divider">VS</div>
+        <div class="ova-vs__card ova-vs__card--alt">
+          <span class="ova-vs__card-tag" style="background:color-mix(in srgb, var(--danger) 14%, transparent); color:var(--danger);">✗ Contraejemplo</span>
+          <h3>Contraejemplo</h3>
+          <p>El equipo de trabajo (compañeros) que usa el mismo formato de riesgo, ya diligenciado de una vez para siempre,
+            sin volver a mirarlo ni ajustarlo según el clima o las condiciones del día.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mirada experta -->
+      <div class="ova-callout" style="margin-top:32px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:account-search-outline"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Mirada experta</span>
+          <p style="margin:8px 0 0;">
+            El coordinador de trabajo en alturas, en compañía del trabajador, no decide el nivel de riesgo desde un escritorio ni
+            llenando una casilla al azar: va al sitio, habla con quienes van a ejecutar la tarea,
+            y observa las condiciones reales antes de opinar. Frente a un riesgo que parece alto,
+            su primera pregunta nunca es “qué equipo de protección se necesita”, sino “qué de
+            esto se puede eliminar o cambiar antes de exponer a alguien”. Ejemplo de cómo piensa
+            un experto: al evaluar el cambio de una luminaria a 3 metros sobre una plataforma
+            metálica, en lugar de asumir de inmediato que el riesgo es alto porque la tarea es
+            frecuente, primero revisa si existe una regla clara de no trabajar con lluvia y si
+            esa regla realmente se cumple en la práctica. Si se cumple, el riesgo real es menor
+            de lo que parecía a simple vista.
+          </p>
+        </div>
+      </div>
+
+      <!-- Botón: Importante -->
+      <div class="ova-callout" style="margin-top:14px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:information-outline"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Importante</span>
+          <p style="margin:8px 0 0;">
+            Cuando el riesgo de una tarea es alto, la solución no es simplemente añadir más
+            equipo de protección: primero se debe intentar eliminar o reducir el peligro desde su
+            origen.
+          </p>
+        </div>
+      </div>
+
+      <!-- Comparativo · Buena práctica / Mala práctica -->
+      <h3 style="margin:48px 0 16px; display:flex; align-items:center; gap:10px;" data-reveal>
+        <iconify-icon icon="mdi:scale-balance" style="color:var(--c-acento); font-size:1.6rem;"></iconify-icon>
+        Comparativo
+      </h3>
+      <div data-reveal style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+        <div style="position:relative; padding:28px; background:linear-gradient(135deg, color-mix(in srgb, var(--success) 8%, var(--bg-surface)) 0%, var(--bg-surface) 100%); border:1px solid color-mix(in srgb, var(--success) 35%, var(--border-c)); border-radius:var(--r-md);">
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom:18px;">
+            <div style="width:36px; height:36px; border-radius:10px; background:var(--success); color:white; display:grid; place-items:center;">
+              <iconify-icon icon="mdi:check-bold" style="font-size:1.2rem;"></iconify-icon>
+            </div>
+            <h3 style="margin:0; font-size:1.2rem; color:var(--success);">Buena práctica</h3>
+          </div>
+          <p style="margin:0;">
+            Antes de iniciar la tarea, verificar que los controles definidos en el permiso (eliminación, sustitución, controles de ingeniería y administrativos) sigan siendo válidos si cambiaron las condiciones del sitio o del clima.
+          </p>
+        </div>
+        <div style="position:relative; padding:28px; background:linear-gradient(135deg, color-mix(in srgb, var(--danger) 8%, var(--bg-surface)) 0%, var(--bg-surface) 100%); border:1px solid color-mix(in srgb, var(--danger) 30%, var(--border-c)); border-radius:var(--r-md);">
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom:18px;">
+            <div style="width:36px; height:36px; border-radius:10px; background:var(--danger); color:white; display:grid; place-items:center;">
+              <iconify-icon icon="mdi:close-thick" style="font-size:1.2rem;"></iconify-icon>
+            </div>
+            <h3 style="margin:0; font-size:1.2rem; color:var(--danger);">Mala práctica</h3>
+          </div>
+          <p style="margin:0;">
+            Empezar la tarea confiando en que el peligro ya fue controlado desde el permiso, sin volver a mirar si las condiciones del día siguen siendo las mismas que se evaluaron.
+          </p>
+        </div>
+      </div>
+
+      <!-- Botón: Ponte a prueba -->
+      <div class="ova-callout ova-callout--success" style="margin-top:32px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:pencil-outline"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Ponte a prueba</span>
+          <p style="margin:8px 0 0;">
+            Piensa en el equipo que debe instalar publicidad en la fachada del edificio de seis pisos, del caso inicial de este tema: ¿qué peligros identificarías y qué intentarías hacer primero, antes de pensar en el arnés o en tus epp? No necesitas escribir ni entregar tu respuesta; esta reflexión te prepara para identificar peligros antes de subir.
+          </p>
+        </div>
+      </div>

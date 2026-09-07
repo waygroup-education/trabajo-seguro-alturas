@@ -1,0 +1,67 @@
+      <header class="ova-screen__head" data-reveal>
+        <div class="ova-screen__eyebrow">Tema {{NUM}}</div>
+        <h1 class="ova-screen__title">Uso de la Inmersión de trabajo en alturas</h1>
+        <p class="ova-screen__lead">La Inmersión de realidad virtual permite practicar situaciones de trabajo en alturas en un entorno seguro. Su objetivo es que el participante aplique el paso a paso revisado en la fase teórica en escenarios realistas.</p>
+      </header>
+
+      <!-- HERO VR · condición de acceso a la Inmersión (texto literal, último enunciado del párrafo del DI) -->
+      <div data-reveal style="margin-top:8px; padding:32px; background:linear-gradient(135deg, color-mix(in srgb, var(--c-info) 14%, var(--bg-surface)) 0%, var(--bg-surface) 60%); border:1px solid color-mix(in srgb, var(--c-info) 30%, var(--border-c)); border-radius:var(--r-lg); position:relative; overflow:hidden;">
+        <div aria-hidden="true" style="position:absolute; top:-40px; right:-40px; width:280px; height:280px; background: radial-gradient(circle, color-mix(in srgb, var(--c-info) 20%, transparent) 0%, transparent 70%); pointer-events:none;"></div>
+        <div style="display:grid; grid-template-columns: minmax(0, auto) minmax(0, 1fr); gap:32px; align-items:center; position:relative; z-index:1;">
+          <div style="width:96px; height:96px; border-radius:24px; background:linear-gradient(135deg, var(--c-info), color-mix(in srgb, var(--c-info) 60%, var(--c-acento))); display:grid; place-items:center; color:white; box-shadow:0 20px 40px color-mix(in srgb, var(--c-info) 30%, transparent);">
+            <iconify-icon icon="mdi:virtual-reality" style="font-size:3rem;"></iconify-icon>
+          </div>
+          <div>
+            <div style="font-family:var(--font-mono); font-size:.72rem; letter-spacing:.18em; color:var(--c-info); text-transform:uppercase; margin-bottom:6px;">Práctica inmersiva · VR</div>
+            <div style="font-family:var(--font-display); font-size:clamp(1.25rem, 2vw, 1.6rem); font-weight:800; color:var(--text-head); letter-spacing:-.02em; line-height:1.35;">
+              Con la fase teórica aprobada y el permiso de trabajo diligenciado, se pasa
+              a aplicar estos mismos criterios en un escenario controlado.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARRUSEL DE ESCENARIOS (así lo nombra el DI) · 4 escenas literales -->
+      <div class="ova-carrusel" data-reveal style="margin-top:48px;">
+        <div class="ova-carrusel__track-wrap">
+          <div class="ova-carrusel__track">
+            <div class="ova-carrusel__slide">
+              <iconify-icon icon="mdi:transmission-tower" style="font-size:2.4rem; color:var(--c-acento);"></iconify-icon>
+              <h4 style="margin-top:12px;">Torre eléctrica</h4>
+              <p style="color:var(--text-mut); font-size:.9rem;">Escena donde se pone a prueba el uso de guantes dieléctricos certificados según el nivel de voltaje.</p>
+            </div>
+            <div class="ova-carrusel__slide">
+              <iconify-icon icon="mdi:hard-hat" style="font-size:2.4rem; color:var(--c-acento);"></iconify-icon>
+              <h4 style="margin-top:12px;">Caída de objetos</h4>
+              <p style="color:var(--text-mut); font-size:.9rem;">Escena donde el participante debe colocarse el casco y avisar a su compañero antes de que algo caiga.</p>
+            </div>
+            <div class="ova-carrusel__slide">
+              <iconify-icon icon="mdi:bridge" style="font-size:2.4rem; color:var(--c-acento);"></iconify-icon>
+              <h4 style="margin-top:12px;">Cruce en alturas</h4>
+              <p style="color:var(--text-mut); font-size:.9rem;">Escena de una pasarela que falla a mitad de camino: el desenlace depende de si la persona estaba anclada a la línea de vida.</p>
+            </div>
+            <div class="ova-carrusel__slide">
+              <iconify-icon icon="mdi:emoticon-dizzy-outline" style="font-size:2.4rem; color:var(--c-acento);"></iconify-icon>
+              <h4 style="margin-top:12px;">Prueba de vértigo</h4>
+              <p style="color:var(--text-mut); font-size:.9rem;">Escena de autoevaluación honesta: decidir si se cruza por la tabla o si se reconoce que esa decisión tiene un costo.</p>
+            </div>
+            <div class="ova-carrusel__slide">
+              <iconify-icon icon="mdi:ladder" style="font-size:2.4rem; color:var(--c-acento);"></iconify-icon>
+              <h4 style="margin-top:12px;">Andamios</h4>
+              <p style="color:var(--text-mut); font-size:.9rem;">Escena donde se revisa el armado del andamio y su tarjeta de aprobación antes de subir a trabajar sobre él.</p>
+            </div>
+            <div class="ova-carrusel__slide">
+              <iconify-icon icon="mdi:crane" style="font-size:2.4rem; color:var(--c-acento);"></iconify-icon>
+              <h4 style="margin-top:12px;">Torre grúa</h4>
+              <p style="color:var(--text-mut); font-size:.9rem;">Escena de ascenso por escalera hasta la torre grúa, donde el viento pone a prueba la decisión de continuar o detener la tarea.</p>
+            </div>
+          </div>
+        </div>
+        <div class="ova-carrusel__nav">
+          <div class="ova-carrusel__dots"></div>
+          <div class="ova-carrusel__arrows">
+            <button class="ova-carrusel__arrow" data-ova-carrusel-prev><iconify-icon icon="mdi:arrow-left"></iconify-icon></button>
+            <button class="ova-carrusel__arrow" data-ova-carrusel-next><iconify-icon icon="mdi:arrow-right"></iconify-icon></button>
+          </div>
+        </div>
+      </div>
