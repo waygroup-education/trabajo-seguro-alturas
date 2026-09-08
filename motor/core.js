@@ -162,7 +162,7 @@
       transition: left .25s ease, background .2s ease, transform .2s ease;
     `;
     document.body.appendChild(btn);
-    console.log('[wg] Sidebar toggle inyectado:', btn);
+    // toggle del sidebar inyectado
 
     // Helper · aplica los estilos inline para garantizar funcionamiento aunque el CSS esté cacheado
     function applyCollapsedState(collapsed){
@@ -349,7 +349,7 @@
     document.documentElement.setAttribute('data-version', v);
     localStorage.setItem('ova-version', v);
     document.querySelectorAll('[data-ova-version-btn]').forEach(btn => {
-      btn.classList.toggle('is-active', btn.dataset.wgVersionBtn === v);
+      btn.classList.toggle('is-active', btn.dataset.ovaVersionBtn === v);
     });
   }
   function renderVersionSwitch(root = document) {
@@ -372,13 +372,13 @@
     // sincronizar el pill activo con el tema vigente
     const saved = localStorage.getItem('ova-version') || 'hibrida';
     root.querySelectorAll('[data-ova-version-btn]').forEach(btn => {
-      btn.classList.toggle('is-active', btn.dataset.wgVersionBtn === saved);
+      btn.classList.toggle('is-active', btn.dataset.ovaVersionBtn === saved);
     });
   }
   function setupVersionGlobal() {
     document.addEventListener('click', e => {
       const btn = e.target.closest('[data-ova-version-btn]');
-      if (btn) setVersion(btn.dataset.wgVersionBtn);
+      if (btn) setVersion(btn.dataset.ovaVersionBtn);
     });
     setVersion(localStorage.getItem('ova-version') || 'hibrida');
   }
@@ -504,7 +504,7 @@
         e.preventDefault();
         zone.classList.remove('is-over');
         if (!dragged) return;
-        const correct = dragged.dataset.wgCorrect === zone.dataset.wgTarget;
+        const correct = dragged.dataset.ovaCorrect === zone.dataset.ovaTarget;
         dragged.classList.add(correct ? 'is-correct' : 'is-wrong');
         zone.querySelector('.ova-dnd__items')?.appendChild(dragged);
       });
@@ -532,7 +532,7 @@
         if (!list) return;
         list.querySelectorAll('.ova-orden__item').forEach((item, i) => {
           item.classList.remove('is-correct', 'is-wrong');
-          item.classList.add(parseInt(item.dataset.wgOrder) === i + 1 ? 'is-correct' : 'is-wrong');
+          item.classList.add(parseInt(item.dataset.ovaOrder) === i + 1 ? 'is-correct' : 'is-wrong');
         });
       });
     });
@@ -556,7 +556,7 @@
           if (selected.parentElement === item.parentElement) {
             selected.classList.remove('is-selected'); selected = item; item.classList.add('is-selected'); return;
           }
-          const match = selected.dataset.wgMatch === item.dataset.wgMatch;
+          const match = selected.dataset.ovaMatch === item.dataset.ovaMatch;
           group.dispatchEvent(new CustomEvent('ova:empar-intento', { bubbles: true, detail: { correcta: match } }));
           if (match) { [selected, item].forEach(el => { el.classList.add('is-matched'); el.classList.remove('is-selected'); }); }
           else {
@@ -573,7 +573,7 @@
   function setupModal() {
     document.addEventListener('click', e => {
       const open = e.target.closest('[data-ova-modal-open]');
-      if (open) { document.getElementById(open.dataset.wgModalOpen)?.classList.add('is-open'); return; }
+      if (open) { document.getElementById(open.dataset.ovaModalOpen)?.classList.add('is-open'); return; }
       const close = e.target.closest('[data-ova-modal-close]');
       if (close) { close.closest('.ova-modal')?.classList.remove('is-open'); return; }
       if (e.target.classList.contains('ova-modal')) e.target.classList.remove('is-open');
