@@ -1479,6 +1479,19 @@ code {
 .ova-figura__caption strong { display: block; font-family: var(--font-display); font-size: 1rem; color: var(--text-head); margin-bottom: 4px; }
 .ova-figura__caption span { font-size: .88rem; color: var(--text-mut); }
 
+/* FIGURA PLANA · sin caja ni pie, centrada en su lienzo. Leyenda solo si el DI la declara. */
+.ova-figura--plana { background: none; border: 0; border-radius: 0; overflow: visible; width: 100%; text-align: center; margin-bottom: 28px; }
+.ova-figura--plana:hover { transform: none; box-shadow: none; }
+.ova-figura--plana .ova-figura__hero { height: auto; padding: 0; background: none; display: block; overflow: visible; }
+.ova-figura--plana .ova-figura__hero::before { content: none; }
+.ova-figura--plana img { display: block; max-width: 100%; max-height: none; height: auto; margin-inline: auto; }
+.ova-figura--plana .ova-figura__leyenda {
+  margin-top: 10px; padding: 10px 14px;
+  background: var(--bg-muted); border-left: 3px solid var(--c-acento);
+  font-size: .9rem; color: var(--text-mut); text-align: left;
+}
+.ova-figura--plana .ova-figura__leyenda b { font-family: var(--font-display); color: var(--text-head); }
+
 /* ANTES / DESPUÉS */
 .ova-beforeafter {
   position: relative;
